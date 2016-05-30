@@ -1,6 +1,10 @@
-body,h1,h2,h3,h4,h5,h6,p {
+body,h1,h2,h3,h4,h5,h6,p,ul,li {
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 .header {
@@ -9,4 +13,34 @@ body,h1,h2,h3,h4,h5,h6,p {
   background-image: url(../images/header_bg.jpg);
   background-size: cover;
   background-position: center;
+}
+
+
+
+
+
+
+/* footer */
+
+.footer {
+  background-color: #242a37;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.social li {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.social a {
+  font-size: 18px;
+  text-decoration: none;
 }
