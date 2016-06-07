@@ -64,6 +64,13 @@ body {
   float: left;
 }
 
+.coming-soon {
+  text-align: center;
+  font-size: 46px;
+  color: #e6e6e6;
+  padding-bottom: 80px;
+}
+
 /* ticket */
 
 .ticket {
