@@ -15,6 +15,10 @@ a {
   transition-duration: 0.5s;
 }
 
+a:hover {
+  color: #656314;
+}
+
 /* header */
 
 .header {
@@ -29,7 +33,7 @@ a {
 
 .container {
   max-width: 800px;
-  margin: 0 auto 40px;
+  margin: 0 auto 100px;
 }
 
 .container:after {
@@ -82,7 +86,7 @@ a {
 
 .ticket {
   text-align: center;
-  margin: 100px 0;
+  margin: 0 0 100px;
 }
 
 .ticket a {
@@ -118,6 +122,18 @@ a.history:hover {
 
 .history p {
   padding: 14px;
+}
+
+/* banner */
+
+.banner {
+  text-align: center;
+  
+}
+
+.banner img {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 /* footer */
