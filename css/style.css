@@ -12,6 +12,7 @@ body {
 
 a {
   color: #908e11;
+  transition-duration: 0.5s;
 }
 
 /* header */
@@ -94,6 +95,10 @@ a {
   display: inline-block;
 }
 
+.ticket a:hover {
+  background-color: #656314;
+}
+
 /* history */
 
 a.history {
@@ -101,6 +106,10 @@ a.history {
   border: 1px solid #e6e6e6;
   text-align: center;
   line-height: 1;
+}
+
+a.history:hover {
+  border: 1px solid #908e11;
 }
 
 .history img {
