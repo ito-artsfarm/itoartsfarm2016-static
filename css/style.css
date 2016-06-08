@@ -87,6 +87,37 @@ a:hover {
   width: 360px;
 }
 
+/* event about */
+
+.event-about-time {
+  font-size: 44px;
+  text-align: center;
+}
+
+.event-about-time-small {
+  font-size: 25px;
+  vertical-align: 4px;
+}
+
+.event-about {
+  margin: 60px auto 0;
+}
+
+.event-about th {
+  width: 100px;
+  text-align: right;
+  background: #eee;
+  padding: 10px;
+
+}
+
+.event-about td {
+  width: 500px;
+  text-align: left;
+  background: #ccc;
+  padding: 10px;
+}
+
 /* ticket */
 
 .ticket {
