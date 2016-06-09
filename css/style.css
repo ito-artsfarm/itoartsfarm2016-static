@@ -101,21 +101,32 @@ a:hover {
 
 .event-about {
   margin: 60px auto 0;
+  line-height: 120%;
+  font-size: 18px;
 }
 
 .event-about th {
-  width: 100px;
+  width: 140px;
   text-align: right;
-  background: #eee;
-  padding: 10px;
-
+  padding: 0 20px 10px 0;
+  color: #798092;
+  border-right: 1px solid #e6e6e6;
+  font-weight: normal;
 }
 
 .event-about td {
-  width: 500px;
+  width: 370px;
   text-align: left;
-  background: #ccc;
-  padding: 10px;
+  padding: 0 0 15px 20px;
+}
+
+.event-about tr:last-child th,
+.event-about tr:last-child td {
+  padding-bottom: 0;
+}
+
+.event-abou-small {
+  font-size: 12px;
 }
 
 /* ticket */
