@@ -237,22 +237,41 @@ a:hover {
 .ticket {
   text-align: center;
   margin: 0 0 100px;
+  background: #908e11;
+  padding: 70px 0;
+}
+
+.ticket-description {
+  line-height: 140%;
+  color: #fff;
+  margin-top: 30px;
 }
 
 .ticket a {
-  padding: 16px 90px;
-  background-color: #908e11;
+  padding: 26px 150px;
+  background-color: #fff;
   text-decoration: none;
   font-size: 22px;
-  color: #fff;
-  border-radius: 50px;
+  color: #656314;
+  border-radius: 6px;
   display: inline-block;
-  transition-property: background;
+  transition-property: opacity;
   transition-duration: .5s;
+  box-shadow: 0 5px 13px 0 rgba(0,0,0,0.25);
 }
 
 .ticket a:hover {
-  background-color: #656314;
+  opacity: 0.6;
+}
+
+.ticket a.disable {
+  background-color: #717171 !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+.ticket a.disable:hover {
+  opacity: 1 !important;
 }
 
 /* history */
