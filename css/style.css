@@ -87,6 +87,42 @@ a:hover {
   width: 360px;
 }
 
+.sponsor {
+  margin-top: 40px;
+}
+
+.sponsor h4 {
+  font-weight: normal;
+  color: #8c8c8c;
+  margin-bottom: 14px;
+}
+
+.sponsor-1 {
+  width: 100px;
+}
+
+.sponsor-2 {
+  width: 200px;
+  margin-left: 75px;
+}
+
+.sponsor-3 {
+  width: 350px;
+}
+
+.sponsor-sk {
+  margin-top: 19px;
+}
+
+.sponsor-sal {
+  margin-top: 2px;
+}
+
+.sponsor-kyushu-u {
+  margin-left: 24px;
+  padding-bottom: 13px;
+}
+
 /* event about */
 
 .event-about-time {
@@ -198,6 +234,12 @@ a.history:hover {
 
 .footer a {
   color: #fff;
+  transition-property: opacity;
+  transition-duration: .5s;
+}
+
+.footer a:hover {
+  opacity: 0.6;
 }
 
 .social li {
