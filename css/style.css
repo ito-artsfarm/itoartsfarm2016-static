@@ -18,6 +18,10 @@ a:hover {
   color: #656314;
 }
 
+.center {
+  text-align: center;
+}
+
 /* header */
 
 .header {
@@ -301,10 +305,40 @@ input[type="submit"]:hover {
   background-color: #656314;
 }
 
-.w-300 {
-  width: 300px;
+.w-400 {
+  width: 400px;
 }
 
 .w-600 {
   width: 600px;
+}
+
+.support {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.submit {
+  margin: 20px auto 40px;
+}
+
+.phone {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.phone i {
+  font-size: 26px;
+  margin-right: 7px;
+  vertical-align: -3px;
 }
