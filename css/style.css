@@ -26,17 +26,20 @@ a:hover {
   margin-top: 20px;
 }
 
+.container:after,
+.entry:after,
+.navigation:after,
+.header-inner:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 /* common - container */
 
 .container {
   max-width: 800px;
   margin: 0 auto 100px;
-}
-
-.container:after {
-  content: "";
-  clear: both;
-  display: block;
 }
 
 .container-right {
@@ -88,12 +91,6 @@ a:hover {
 
 .entry li:nth-child(3n) {
   margin-right: 0;
-}
-
-.entry:after {
-  content: "";
-  clear: both;
-  display: block;
 }
 
 .entry .image,
@@ -236,90 +233,93 @@ input[type="submit"]:hover {
   margin-bottom: 100px;
 }
 
+.header h1 {
+  font-size: 16px;
+  width: 400px;
+  text-align: left;
+}
+
 .header h1 .english {
   font-size: 12px;
 }
 
+.header-inner-left {
+  float: left;
+}
+
+.header-inner-right {
+  float: right;
+}
+
 /* header - navigation */
 
-.navigation a, a:hover {
-  text-decoration:none;
+.navigation {
+  width: 520px;
 }
 
 .navigation li {
-	float:left;
-	position:relative;
-	list-style:none;
-	line-height:14px;
-	font-size:14px;
-	font-weight:bold;
+  float: left;
+  position: relative;
+  list-style: none;
+  line-height: 14px;
+  font-size: 14px;
+}
+
+.navigation li {
+  display: block;
+  padding: 0 15px;
+  height: 70px;
+  line-height: 70px;
 }
 
 .navigation li a {
-	display:block;
-	padding:13px 15px;
+  color: #484848;
+  text-decoration: none;
 }
 
 .navigation li:hover>a {
-	background-color:#fff;
-	display:block;
-	padding:13px 15px;
+  background-color: #fff;
 }
 
 .navigation li ul {
-	display:block;
-	position:absolute;
-	border:none;
-	left:0;
-	top:200%;
-	opacity:0;
-	width:200px;
-	background-color:#fff;
+  display: block;
+  position: absolute;
+  border:n one;
+  left: 0;
+  top: 200%;
+  opacity: 0;
+  width: 200px;
+  background-color: #fff;
   text-align: left;
-}
-
-.navigation li:last-of-type ul {
-	left:auto;
-	right:0;
+  z-index: 1000;
 }
 
 .navigation li li {
-	height:0;
-	padding:0;
-	font-size:12px;
-	float:none;
-	border:none;
-	overflow:hidden;
-}
-
-.navigation li li a {
-	text-indent:-50%;
-	opacity:0;
+  height: 0;
+  padding: 0;
+  font-size: 12px;
+  float: none;
+  border: none;
+  overflow: hidden;
 }
 
 .navigation li:hover ul {
-	opacity:1;
-	top:40px;
-	padding:5px 0;
+	opacity: 1;
+	top: 50px;
+	padding: 5px 0;
 }
 
 .navigation li:hover li {
-	height:40px;
+	height: 40px;
 }
 
 .navigation li:hover li a {
-	text-indent:0;
-	opacity:1;
+	text-indent: 0;
+	opacity: 1;
 }
 
 .navigation li:hover li:hover a {
 	background-color: #ccc;
-}
-
-.navigation:after {
-  content: "";
-  clear: both;
-  display: block;
 }
 
 /* header - copy */
