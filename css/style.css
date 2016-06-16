@@ -294,6 +294,8 @@ input[type="submit"]:hover {
   background-color: rgba(0,0,0,.1);
 }
 
+/* header - navigation sub */
+
 .navigation li ul {
   display: block;
   position: absolute;
@@ -314,14 +316,14 @@ input[type="submit"]:hover {
 
 .navigation li:hover ul li {
   background-color: #fff;
-  box-shadow: 0 5px 13px 0 rgba(0,0,0,0.25);
+  box-shadow: 0 5px 13px 0 rgba(0,0,0,0.15);
 }
 
 .navigation li li a {
   padding: 8px 10px;
   display: block;
   width: 180px;
-  border-bottom: 1px dashed #dedebd;
+  border-bottom: 1px solid #efefef;
 }
 
 .navigation li li:last-child a {
@@ -336,6 +338,21 @@ input[type="submit"]:hover {
 .navigation li:hover li:hover a {
   background-color: #908e11;
   color: #fff;
+}
+
+/* header - navigation ticket */
+
+.navigation li a.ticket {
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin: 4px 4px 4px 14px;
+  display: inline-block;
+  background-color: #908e11;
+  color: #fff;
+}
+
+.navigation li:hover > a.ticket {
+  background-color: #656314;
 }
 
 /* header - copy */
