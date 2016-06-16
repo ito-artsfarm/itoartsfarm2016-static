@@ -40,7 +40,13 @@ a:hover {
 .container {
   max-width: 800px;
   margin: 0 auto 100px;
-  padding: 0 10px;
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 460px) {
+  .container {
+    margin: 0 auto 40px;
+  }
 }
 
 .container-right {
@@ -51,10 +57,27 @@ a:hover {
   float: left;
 }
 
+@media screen and (max-width: 800px) {
+  .container-right {
+    float: none;
+  }
+
+  .container-left {
+    float: none;
+  }
+}
+
 .title {
   text-align: center;
   margin: 0 0 60px;
   font-size: 26px;
+}
+
+@media screen and (max-width: 460px) {
+  .title {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
 }
 
 .inner-title {
@@ -74,6 +97,12 @@ a:hover {
   margin-bottom: 110px;
 }
 
+@media screen and (max-width: 460px) {
+  .border {
+    margin-bottom: 40px;
+  }
+}
+
 /* common - entry */
 
 .entry li {
@@ -87,7 +116,7 @@ a:hover {
 }
 
 .entry li:hover {
-  opacity: 0.6;
+  opacity: .6;
 }
 
 .entry li:nth-child(3n) {
@@ -195,6 +224,14 @@ input[type="submit"]:hover {
   width: 400px;
 }
 
+@media screen and (max-width: 460px) {
+  .w-300,
+  .w-400 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
 .w-600 {
   width: 600px;
 }
@@ -202,6 +239,14 @@ input[type="submit"]:hover {
 .support {
   width: 600px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .support,
+  .w-600 {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .label {
@@ -232,6 +277,12 @@ input[type="submit"]:hover {
   background-size: cover;
   background-position: center;
   margin-bottom: 100px;
+}
+
+@media screen and (max-width: 460px) {
+  .header {
+    margin-bottom: 50px;
+  }
 }
 
 .header h1 {
@@ -317,7 +368,7 @@ input[type="submit"]:hover {
 
 .navigation li:hover ul li {
   background-color: #fff;
-  box-shadow: 0 5px 13px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 5px 13px 0 rgba(0,0,0, .15);
 }
 
 .navigation li li a {
@@ -367,8 +418,9 @@ input[type="submit"]:hover {
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 540px;
+  max-width: 540px;
   height: 210px;
+  padding: 0 10px;
   word-wrap: break-word;
   text-shadow: 0 0 5px rgba(0, 0, 100, 1);
 }
@@ -386,6 +438,12 @@ input[type="submit"]:hover {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 540px) {
+  .header-time {
+    font-size: 34px;
+  }
+}
+
 /* header - news */
 
 .news {
@@ -393,8 +451,8 @@ input[type="submit"]:hover {
   position: absolute;
   left: 30px;
   bottom: 30px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 1px 12px 1px rgba(26, 39, 5, 0.77);
+  background-color: #fff;
+  box-shadow: 0 1px 12px 1px rgba(26, 39, 5, .77);
   padding: 10px 14px;
   border-radius: 4px;
 }
@@ -409,17 +467,37 @@ input[type="submit"]:hover {
   color: #fff;
   background-color: #4E6108;
   border-radius: 4px;
-  padding: 0px 6px;
+  padding: 0 6px;
 }
 
 .news li {
   list-style-type: none;
   line-height: 160%;
   font-size: 13px;
-  width: 400px;
+  max-width: 400px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 460px) {
+  .news {
+    left: 0;
+    bottom: 0;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #efefef;
+  }
+
+  .news h2 {
+    font-size: 14px;
+    position: static;
+    color: #0c0f16;
+    background: none;
+    padding: 0 0 6px;
+  }
 }
 
 /* about */
@@ -434,6 +512,14 @@ input[type="submit"]:hover {
 .about-inner {
   margin-top: 50px;
   max-width: 360px;
+}
+
+@media screen and (max-width: 800px) {
+  .about-inner {
+    margin-top: 30px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .sponsor {
@@ -476,7 +562,28 @@ input[type="submit"]:hover {
 
 .event-about-time {
   font-size: 44px;
+  line-height: 44px;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .event-about-time {
+    font-size: 34px;
+    line-height: 44px;
+  }
+  .event-about-time-ym {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .event-about-time {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .event-about-time-ym {
+    display: block;
+  }
 }
 
 .event-about-time-small {
@@ -488,6 +595,13 @@ input[type="submit"]:hover {
   margin: 60px auto 0;
   line-height: 120%;
   font-size: 18px;
+}
+
+@media screen and (max-width: 460px) {
+  .event-about {
+    margin: 20px auto 0;
+    font-size: 15px;
+  }
 }
 
 .event-about th {
