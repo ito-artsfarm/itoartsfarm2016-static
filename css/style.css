@@ -254,72 +254,78 @@ input[type="submit"]:hover {
 /* header - navigation */
 
 .navigation {
-  width: 520px;
+  width: 540px;
+  margin-top: 20px;
 }
 
 .navigation li {
   float: left;
   position: relative;
   list-style: none;
-  line-height: 14px;
   font-size: 14px;
-}
-
-.navigation li {
   display: block;
-  padding: 0 15px;
-  height: 70px;
-  line-height: 70px;
 }
 
 .navigation li a {
   color: #484848;
   text-decoration: none;
+  transition-property: background,color;
+  transition-duration: .5s;
 }
 
-.navigation li:hover>a {
-  background-color: #fff;
+.navigation li a.root {
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin: 4px;
+  display: inline-block;
+}
+
+.navigation li:hover > a.root {
+  background-color: rgba(0,0,0,.1);
 }
 
 .navigation li ul {
   display: block;
   position: absolute;
-  border:n one;
-  left: 0;
-  top: 200%;
+  top: -1000px;
   opacity: 0;
-  width: 200px;
-  background-color: #fff;
+  width: 180px;
   text-align: left;
   z-index: 1000;
-}
-
-.navigation li li {
-  height: 0;
   padding: 0;
-  font-size: 12px;
-  float: none;
-  border: none;
-  overflow: hidden;
 }
 
 .navigation li:hover ul {
-	opacity: 1;
-	top: 50px;
-	padding: 5px 0;
+  opacity: 1;
+  top: 42px;
+  left: 5px;
+  padding-top: 10px;
 }
 
-.navigation li:hover li {
-	height: 40px;
+.navigation li:hover ul li {
+  background-color: #fff;
+  box-shadow: 0 5px 13px 0 rgba(0,0,0,0.25);
+}
+
+.navigation li li a {
+  padding: 8px 10px;
+  display: block;
+  width: 180px;
+  border-bottom: 1px dashed #dedebd;
+}
+
+.navigation li li:last-child a {
+  border-bottom: none;
 }
 
 .navigation li:hover li a {
-	text-indent: 0;
-	opacity: 1;
+  opacity: 1;
+  font-size: 14px;
 }
 
 .navigation li:hover li:hover a {
-	background-color: #ccc;
+  background-color: #908e11;
+  color: #fff;
 }
 
 /* header - copy */
