@@ -385,6 +385,42 @@ input[type="submit"]:hover {
   margin-top: 30px;
 }
 
+/* header - news */
+
+.news {
+  text-align: left;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 12px 1px rgba(26, 39, 5, 0.77);
+  padding: 10px 14px;
+  border-radius: 4px;
+}
+
+.news h2 {
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  display: block;
+  top: -32px;
+  left: 0;
+  color: #fff;
+  background-color: #4E6108;
+  border-radius: 4px;
+  padding: 0px 6px;
+}
+
+.news li {
+  list-style-type: none;
+  line-height: 160%;
+  font-size: 13px;
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* about */
 
 .about-icon {
