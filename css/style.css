@@ -432,7 +432,7 @@ input[type="submit"]:hover {
 
 .about-inner {
   margin-top: 50px;
-  width: 360px;
+  max-width: 360px;
 }
 
 .sponsor {
@@ -571,7 +571,7 @@ input[type="submit"]:hover {
 /* history */
 
 a.history {
-  width: 380px;
+  max-width: 380px;
   border: 1px solid #e6e6e6;
   text-align: center;
   line-height: 1;
