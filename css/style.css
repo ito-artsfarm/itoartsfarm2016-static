@@ -40,6 +40,7 @@ a:hover {
 .container {
   max-width: 800px;
   margin: 0 auto 100px;
+  padding: 0 10px;
 }
 
 .container-right {
