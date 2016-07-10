@@ -286,23 +286,40 @@ input[type="submit"]:hover {
 }
 
 .header h1 {
-  color: #0c0f16;
-  font-size: 16px;
-  width: 350px;
-  line-height: 110%;
-  padding-left: 33px;
-  height: 40px;
-  text-align: left;
-  background-image: url(../images/logo.svg);
-  background-size: 24px 34px;
-  background-repeat: no-repeat;
-  margin: 20px 0 0 20px;
+    color: #0c0f16;
+    font-size: 16px;
+    width: 350px;
+    line-height: 110%;
+    padding-left: 33px;
+    padding-top: 2px;
+    height: 40px;
+    text-align: left;
+    background-image: url(../images/logo.svg);
+    background-size: 24px 34px;
+    background-repeat: no-repeat;
+    margin: 22px 0 0 20px;
 }
 
 .header h1 .english {
   font-size: 12px;
   font-weight: normal;
   color: #6c7a9a;
+}
+
+.header-inner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  transition: all .5s ease;
+  box-shadow:0 1px 0 0 #e3e3e3;
+  z-index: 100;
+}
+
+.header-inner-hidden {
+  background: none;
+  box-shadow: none;
+  transition: all .5s ease;
 }
 
 .header-inner-left {
@@ -317,7 +334,7 @@ input[type="submit"]:hover {
 
 .navigation {
   width: 540px;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .navigation li {
