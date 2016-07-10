@@ -43,9 +43,9 @@ a:hover {
   padding: 0 30px;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 700px) {
   .container {
-    margin: 0 auto 40px;
+    margin: 0 auto 50px;
   }
 }
 
@@ -97,7 +97,7 @@ a:hover {
   margin-bottom: 110px;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 700px) {
   .border {
     margin-bottom: 40px;
   }
@@ -158,6 +158,43 @@ a:hover {
 .entr-link-icon {
   margin-right: 5px;
   font-size: 13px;
+}
+
+.entry-search {
+  width: 300px;
+}
+
+@media screen and (min-width: 520px) and (max-width: 860px) {
+  .entry {
+    width: 520px;
+    margin: 0 auto;
+  }
+
+  .entry li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .entry li:nth-child(3) {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .entry {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .entry li,
+  .entry .image,
+  .entry .gradation,
+  .entry p {
+    width: 100%;
+  }
+
+  .entry-search {
+    width: 160px;
+  }
 }
 
 /* common - text-list */
@@ -306,6 +343,20 @@ input[type="submit"]:hover {
   color: #6c7a9a;
 }
 
+@media screen and (max-width: 460px) {
+  .header h1 {
+    font-size: 14px;
+    width: 230px;
+    margin: 14px 0 0 22px;
+    background-position: 0 7px;
+  }
+
+  .header h1 .english {
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
+
 .header-inner {
   position: fixed;
   top: 0;
@@ -452,10 +503,16 @@ input[type="submit"]:hover {
   bottom: 0;
   margin: auto;
   max-width: 540px;
-  height: 210px;
+  height: 260px;
   padding: 0 10px;
   word-wrap: break-word;
   text-shadow: 0 0 5px rgba(0, 0, 100, 1);
+}
+
+@media screen and (max-width: 540px) {
+  .copy {
+    height: 300px;
+  }
 }
 
 .copy .copy-english {
@@ -475,6 +532,15 @@ input[type="submit"]:hover {
   .header-time {
     font-size: 34px;
   }
+}
+
+.header-scroll {
+  margin-top: 26px;
+}
+
+.header-scroll a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* header - news */
@@ -578,6 +644,17 @@ input[type="submit"]:hover {
   width: 350px;
 }
 
+@media screen and (max-width: 860px) {
+  .sponsor-1,
+  .sponsor-2,
+  .sponsor-3 {
+    margin: 20px 0 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
 .sponsor-sk {
   margin-top: 19px;
 }
@@ -589,6 +666,14 @@ input[type="submit"]:hover {
 .sponsor-kyushu-u {
   margin-left: 24px;
   padding-bottom: 13px;
+}
+
+@media screen and (max-width: 400px) {
+  .sponsor-kyushu-u {
+    display: block;
+    margin: 20px 0 0;
+    width: 200px;
+  }
 }
 
 /* event about */
@@ -635,6 +720,10 @@ input[type="submit"]:hover {
     margin: 20px auto 0;
     font-size: 15px;
   }
+  .event-about-time-small {
+    font-size: 14px;
+    vertical-align: 4px;
+  }
 }
 
 .event-about th {
@@ -670,6 +759,15 @@ input[type="submit"]:hover {
   padding: 70px 0;
 }
 
+@media screen and (max-width: 700px) {
+  .ticket {
+    text-align: center;
+    margin: 0 0 50px;
+    background: #908e11;
+    padding: 40px 20px;
+  }
+}
+
 .ticket-description {
   line-height: 140%;
   color: #fff;
@@ -687,6 +785,12 @@ input[type="submit"]:hover {
   transition-property: opacity;
   transition-duration: .5s;
   box-shadow: 0 5px 13px 0 rgba(0,0,0,0.25);
+}
+
+@media screen and (max-width: 700px) {
+  .ticket a {
+    padding: 20px 40px;
+  }
 }
 
 .ticket a:hover {
@@ -727,6 +831,20 @@ a.history {
   transition-duration: .5s;
 }
 
+@media screen and (max-width: 840px) {
+  a.history {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px auto;
+  }
+  a.history img {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
 a.history:hover {
   border: 1px solid #908e11;
 }
@@ -750,6 +868,26 @@ a.history:hover {
   margin: 0 10px;
 }
 
+@media screen and (max-width: 715px) {
+  .banner .aaf-kumamoto {
+    width: 300px;
+  }
+
+  .banner .aaf {
+    width: 79px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner .aaf-kumamoto {
+    width: 200px;
+  }
+
+  .banner .aaf {
+    width: 53px;
+  }
+}
+
 /* footer */
 
 .footer {
@@ -758,6 +896,12 @@ a.history:hover {
   color: #fff;
   text-align: center;
   font-size: 12px;
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    padding: 40px 0;
+  }
 }
 
 .footer a {
@@ -774,6 +918,12 @@ a.history:hover {
   display: inline-block;
   margin-bottom: 20px;
   padding: 0 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .social li {
+    margin-bottom: 4px;
+  }
 }
 
 .social a {
