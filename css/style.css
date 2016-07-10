@@ -297,7 +297,7 @@ input[type="submit"]:hover {
     background-image: url(../images/logo.svg);
     background-size: 24px 34px;
     background-repeat: no-repeat;
-    margin: 22px 0 0 20px;
+    margin: 22px 0 0 22px;
 }
 
 .header h1 .english {
@@ -310,6 +310,7 @@ input[type="submit"]:hover {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 83px;
   background: #fff;
   transition: all .5s ease;
   box-shadow:0 1px 0 0 #e3e3e3;
@@ -330,11 +331,26 @@ input[type="submit"]:hover {
   float: right;
 }
 
+/* header - navigation + drawer */
+
+.drawer {
+  display: none;
+}
+
+@media screen and (max-width: 944px) {
+  .navigation {
+    display: none;
+  }
+  .drawer {
+    display: flex;
+  }
+}
+
 /* header - navigation */
 
 .navigation {
-  width: 540px;
-  margin: 20px 0;
+  width: 522px;
+  margin-top: 20px;
 }
 
 .navigation li {
