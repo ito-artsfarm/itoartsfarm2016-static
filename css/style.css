@@ -307,7 +307,7 @@ input[type="submit"]:hover {
 
 /* header */
 
-.header {
+.header-fullscreen {
   width: 100%;
   height: 100vh;
   background-image: url(../images/header_bg.jpg);
@@ -316,8 +316,18 @@ input[type="submit"]:hover {
   margin-bottom: 100px;
 }
 
+.pages-header {
+  width: 100%;
+  height: 180px;
+  background-image: url(../images/header_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 100px;
+}
+
 @media screen and (max-width: 460px) {
-  .header {
+  .pages-header,
+  .header-fullscreen {
     margin-bottom: 50px;
   }
 }
