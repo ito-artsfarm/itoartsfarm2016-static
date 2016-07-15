@@ -956,7 +956,24 @@ a.history:hover {
 
 .post-data {
   text-align: center;
-  margin: 0 0 40px;
+  margin: 10px 0 40px;
   font-size: 12px;
-  color: #6c7a9a;
+  color: #b7bfd2;
+}
+
+.post-data i {
+  margin: 0 5px 0 30px;
+  vertical-align: 1px;
+}
+
+.post-data a {
+  color: #b7bfd2;
+  text-decoration: underline;
+  margin-right: 5px;
+}
+
+
+.post-social {
+  text-align: center;
+  margin: 40px 0;
 }
